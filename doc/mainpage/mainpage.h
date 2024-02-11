@@ -1,6 +1,6 @@
 /**
  * @mainpage  LibDriver DS1302
- * @brief     libdriver ds1302 is a full function driver of ds1302 and it can run in both MCU and Linux platform.
+ * @brief     LibDriver DS1302 is a full function driver of DS1302 and it can run in both MCU and Linux platform.
  * @version   1.0.0
  * @author    Shifeng Li
  *
