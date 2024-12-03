@@ -66,7 +66,7 @@ uint8_t ds1302_interface_ce_gpio_deinit(void)
 
 /**
  * @brief     interface ce gpio write
- * @param[in] value is the set level
+ * @param[in] value set level
  * @return    status code
  *            - 0 success
  *            - 1 ce gpio write failed
@@ -103,7 +103,7 @@ uint8_t ds1302_interface_sclk_gpio_deinit(void)
 
 /**
  * @brief     interface sclk gpio write
- * @param[in] value is the set level
+ * @param[in] value set level
  * @return    status code
  *            - 0 success
  *            - 1 sclk gpio write failed
@@ -140,7 +140,7 @@ uint8_t ds1302_interface_io_gpio_deinit(void)
 
 /**
  * @brief     interface io gpio write
- * @param[in] value is the set level
+ * @param[in] value set level
  * @return    status code
  *            - 0 success
  *            - 1 io gpio write failed
@@ -153,7 +153,7 @@ uint8_t ds1302_interface_io_gpio_write(uint8_t value)
 
 /**
  * @brief      interface io gpio read
- * @param[out] *value points to a value buffer
+ * @param[out] *value pointer to a value buffer
  * @return     status code
  *             - 0 success
  *             - 1 io gpio read failed
@@ -166,7 +166,7 @@ uint8_t ds1302_interface_io_gpio_read(uint8_t *value)
 
 /**
  * @brief     interface delay ms
- * @param[in] ms
+ * @param[in] ms time
  * @note      none
  */
 void ds1302_interface_delay_ms(uint32_t ms)
@@ -176,7 +176,7 @@ void ds1302_interface_delay_ms(uint32_t ms)
 
 /**
  * @brief     interface delay us
- * @param[in] us
+ * @param[in] us time
  * @note      none
  */
 void ds1302_interface_delay_us(uint32_t us)
@@ -186,7 +186,7 @@ void ds1302_interface_delay_us(uint32_t us)
 
 /**
  * @brief     interface print format data
- * @param[in] fmt is the format data
+ * @param[in] fmt format data
  * @note      none
  */
 void ds1302_interface_debug_print(const char *const fmt, ...)

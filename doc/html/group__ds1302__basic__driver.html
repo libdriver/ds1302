@@ -372,7 +372,7 @@ Functions</h2></td></tr>
 <p>close the chip </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ds1302 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ds1302 handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -418,8 +418,8 @@ Functions</h2></td></tr>
 <p>get charge </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ds1302 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*charge</td><td>points to a charge buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ds1302 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*charge</td><td>pointer to a charge buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -465,8 +465,8 @@ Functions</h2></td></tr>
 <p>get the chip oscillator status </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ds1302 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>points to a bool value buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ds1302 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>pointer to a bool value buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -512,8 +512,8 @@ Functions</h2></td></tr>
 <p>get the current time </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ds1302 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*t</td><td>points to a time structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ds1302 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*t</td><td>pointer to a time structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -559,8 +559,8 @@ Functions</h2></td></tr>
 <p>get write protect status </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ds1302 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>points to a bool value buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ds1302 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>pointer to a bool value buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -596,7 +596,7 @@ Functions</h2></td></tr>
 <p>get chip's information </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">*info</td><td>points to a ds1302 info structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*info</td><td>pointer to a ds1302 info structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -630,7 +630,7 @@ Functions</h2></td></tr>
 <p>initialize the chip </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ds1302 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ds1302 handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -688,10 +688,10 @@ Functions</h2></td></tr>
 <p>read ram </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ds1302 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>is the ram address </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*buf</td><td>points to a data buffer </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>is the buffer length </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ds1302 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>ram address </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*buf</td><td>pointer to a data buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>buffer length </td></tr>
   </table>
   </dd>
 </dl>
@@ -739,8 +739,8 @@ Functions</h2></td></tr>
 <p>set charge </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ds1302 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">charge</td><td>is the set charge </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ds1302 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">charge</td><td>charge mode </td></tr>
   </table>
   </dd>
 </dl>
@@ -786,8 +786,8 @@ Functions</h2></td></tr>
 <p>enable or disable the oscillator </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ds1302 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>is a bool value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ds1302 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>bool value </td></tr>
   </table>
   </dd>
 </dl>
@@ -833,8 +833,8 @@ Functions</h2></td></tr>
 <p>set the current time </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ds1302 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">*t</td><td>points to a time structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ds1302 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*t</td><td>pointer to a time structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -881,8 +881,8 @@ Functions</h2></td></tr>
 <p>enable or disable write protect </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ds1302 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>is a bool value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ds1302 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>bool value </td></tr>
   </table>
   </dd>
 </dl>
@@ -940,10 +940,10 @@ Functions</h2></td></tr>
 <p>write ram </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ds1302 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>is the ram address </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">*buf</td><td>points to a data buffer </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>is the buffer length </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ds1302 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>ram address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*buf</td><td>pointer to a data buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>buffer length </td></tr>
   </table>
   </dd>
 </dl>

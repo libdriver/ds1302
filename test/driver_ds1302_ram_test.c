@@ -43,7 +43,7 @@ static uint8_t gs_check_buf[31];         /**< check buffer */
 
 /**
  * @brief     ram test
- * @param[in] times is the test times
+ * @param[in] times test times
  * @return    status code
  *            - 0 success
  *            - 1 test failed

@@ -70,9 +70,9 @@
 
 /**
  * @brief     write one byte
- * @param[in] *handle points to a ds1302 handle structure
- * @param[in] reg is the register address
- * @param[in] data is the write data
+ * @param[in] *handle pointer to a ds1302 handle structure
+ * @param[in] reg register address
+ * @param[in] data written data
  * @return    status code
  *            - 0 success
  *            - 1 write failed
@@ -173,9 +173,9 @@ static uint8_t a_ds1302_write(ds1302_handle_t *handle, uint8_t reg, uint8_t data
 
 /**
  * @brief      read one byte
- * @param[in]  *handle points to a ds1302 handle structure
- * @param[in]  reg is the register address
- * @param[out] *data points to a data buffer
+ * @param[in]  *handle pointer to a ds1302 handle structure
+ * @param[in]  reg register address
+ * @param[out] *data pointer to a data buffer
  * @return     status code
  *             - 0 success
  *             - 1 read failed
@@ -270,10 +270,10 @@ static uint8_t a_ds1302_read(ds1302_handle_t *handle, uint8_t reg, uint8_t *data
 
 /**
  * @brief     write multiple bytes
- * @param[in] *handle points to a ds1302 handle structure
- * @param[in] reg is the register address
- * @param[in] *buf points to a data buffer
- * @param[in] len is the data buffer length
+ * @param[in] *handle pointer to a ds1302 handle structure
+ * @param[in] reg register address
+ * @param[in] *buf pointer to a data buffer
+ * @param[in] len data buffer length
  * @return    status code
  *            - 0 success
  *            - 1 write failed
@@ -298,10 +298,10 @@ static uint8_t a_ds1302_multiple_write(ds1302_handle_t *handle, uint8_t reg, uin
 
 /**
  * @brief      read multiple bytes
- * @param[in]  *handle points to a ds1302 handle structure
- * @param[in]  reg is the register address
- * @param[out] *buf points to a data buffer
- * @param[in]  len is the data buffer length
+ * @param[in]  *handle pointer to a ds1302 handle structure
+ * @param[in]  reg register address
+ * @param[out] *buf pointer to a data buffer
+ * @param[in]  len data buffer length
  * @return     status code
  *             - 0 success
  *             - 1 read failed
@@ -326,10 +326,10 @@ static uint8_t a_ds1302_multiple_read(ds1302_handle_t *handle, uint8_t reg, uint
 
 /**
  * @brief     burst write bytes
- * @param[in] *handle points to a ds1302 handle structure
- * @param[in] reg is the register address
- * @param[in] *buf points to a data buffer
- * @param[in] len is the data buffer length
+ * @param[in] *handle pointer to a ds1302 handle structure
+ * @param[in] reg register address
+ * @param[in] *buf pointer to a data buffer
+ * @param[in] len data buffer length
  * @return    status code
  *            - 0 success
  *            - 1 write failed
@@ -434,10 +434,10 @@ static uint8_t a_ds1302_burst_write(ds1302_handle_t *handle, uint8_t reg, uint8_
 
 /**
  * @brief      burst read bytes
- * @param[in]  *handle points to a ds1302 handle structure
- * @param[in]  reg is the register address
- * @param[out] *buf points to a data buffer
- * @param[in]  len is the data buffer length
+ * @param[in]  *handle pointer to a ds1302 handle structure
+ * @param[in]  reg register address
+ * @param[out] *buf pointer to a data buffer
+ * @param[in]  len data buffer length
  * @return     status code
  *             - 0 success
  *             - 1 read failed
@@ -536,7 +536,7 @@ static uint8_t a_ds1302_burst_read(ds1302_handle_t *handle, uint8_t reg, uint8_t
 
 /**
  * @brief     hex to bcd
- * @param[in] val is the hex data
+ * @param[in] val hex data
  * @return    bcd data
  * @note      none
  */
@@ -553,7 +553,7 @@ static uint8_t a_ds1302_hex2bcd(uint8_t val)
 
 /**
  * @brief     bcd to hex
- * @param[in] val is the bcd data
+ * @param[in] val bcd data
  * @return    hex data
  * @note      none
  */
@@ -571,8 +571,8 @@ static uint8_t a_ds1302_bcd2hex(uint8_t val)
 
 /**
  * @brief     set the current time
- * @param[in] *handle points to a ds1302 handle structure
- * @param[in] *t points to a time structure
+ * @param[in] *handle pointer to a ds1302 handle structure
+ * @param[in] *t pointer to a time structure
  * @return    status code
  *            - 0 success
  *            - 1 set time failed
@@ -770,8 +770,8 @@ uint8_t ds1302_set_time(ds1302_handle_t *handle, ds1302_time_t *t)
 
 /**
  * @brief      get the current time
- * @param[in]  *handle points to a ds1302 handle structure
- * @param[out] *t points to a time structure
+ * @param[in]  *handle pointer to a ds1302 handle structure
+ * @param[out] *t pointer to a time structure
  * @return     status code
  *             - 0 success
  *             - 1 get time failed
@@ -830,8 +830,8 @@ uint8_t ds1302_get_time(ds1302_handle_t *handle, ds1302_time_t *t)
 
 /**
  * @brief     enable or disable the oscillator
- * @param[in] *handle points to a ds1302 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a ds1302 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set oscillator failed
@@ -877,8 +877,8 @@ uint8_t ds1302_set_oscillator(ds1302_handle_t *handle, ds1302_bool_t enable)
 
 /**
  * @brief      get the chip oscillator status
- * @param[in]  *handle points to a ds1302 handle structure
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to a ds1302 handle structure
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get oscillator failed
@@ -915,8 +915,8 @@ uint8_t ds1302_get_oscillator(ds1302_handle_t *handle, ds1302_bool_t *enable)
 
 /**
  * @brief     enable or disable write protect
- * @param[in] *handle points to a ds1302 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a ds1302 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set write protect failed
@@ -961,8 +961,8 @@ uint8_t ds1302_set_write_protect(ds1302_handle_t *handle, ds1302_bool_t enable)
 
 /**
  * @brief      get write protect status
- * @param[in]  *handle points to a ds1302 handle structure
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to a ds1302 handle structure
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get write protect failed
@@ -999,8 +999,8 @@ uint8_t ds1302_get_write_protect(ds1302_handle_t *handle, ds1302_bool_t *enable)
 
 /**
  * @brief     set charge
- * @param[in] *handle points to a ds1302 handle structure
- * @param[in] charge is the set charge
+ * @param[in] *handle pointer to a ds1302 handle structure
+ * @param[in] charge charge mode
  * @return    status code
  *            - 0 success
  *            - 1 set charge failed
@@ -1034,8 +1034,8 @@ uint8_t ds1302_set_charge(ds1302_handle_t *handle, uint8_t charge)
 
 /**
  * @brief      get charge
- * @param[in]  *handle points to a ds1302 handle structure
- * @param[out] *charge points to a charge buffer
+ * @param[in]  *handle pointer to a ds1302 handle structure
+ * @param[out] *charge pointer to a charge buffer
  * @return     status code
  *             - 0 success
  *             - 1 get charge failed
@@ -1069,10 +1069,10 @@ uint8_t ds1302_get_charge(ds1302_handle_t *handle, uint8_t *charge)
 
 /**
  * @brief      read ram
- * @param[in]  *handle points to a ds1302 handle structure
- * @param[in]  addr is the ram address
- * @param[out] *buf points to a data buffer
- * @param[in]  len is the buffer length
+ * @param[in]  *handle pointer to a ds1302 handle structure
+ * @param[in]  addr ram address
+ * @param[out] *buf pointer to a data buffer
+ * @param[in]  len buffer length
  * @return     status code
  *             - 0 success
  *             - 1 read ram failed
@@ -1121,10 +1121,10 @@ uint8_t ds1302_read_ram(ds1302_handle_t *handle, uint8_t addr, uint8_t *buf, uin
 
 /**
  * @brief     write ram
- * @param[in] *handle points to a ds1302 handle structure
- * @param[in] addr is the ram address
- * @param[in] *buf points to a data buffer
- * @param[in] len is the buffer length
+ * @param[in] *handle pointer to a ds1302 handle structure
+ * @param[in] addr ram address
+ * @param[in] *buf pointer to a data buffer
+ * @param[in] len buffer length
  * @return    status code
  *            - 0 success
  *            - 1 write ram failed
@@ -1173,7 +1173,7 @@ uint8_t ds1302_write_ram(ds1302_handle_t *handle, uint8_t addr, uint8_t *buf, ui
 
 /**
  * @brief     initialize the chip
- * @param[in] *handle points to a ds1302 handle structure
+ * @param[in] *handle pointer to a ds1302 handle structure
  * @return    status code
  *            - 0 success
  *            - 1 gpio initialization failed
@@ -1286,7 +1286,7 @@ uint8_t ds1302_init(ds1302_handle_t *handle)
 
 /**
  * @brief     close the chip
- * @param[in] *handle points to a ds1302 handle structure
+ * @param[in] *handle pointer to a ds1302 handle structure
  * @return    status code
  *            - 0 success
  *            - 1 gpio deinit failed
@@ -1330,9 +1330,9 @@ uint8_t ds1302_deinit(ds1302_handle_t *handle)
 
 /**
  * @brief     clock burst write
- * @param[in] *handle points to a ds1302 handle structure
- * @param[in] *buf points to a data buffer
- * @param[in] len is the data buffer length
+ * @param[in] *handle pointer to a ds1302 handle structure
+ * @param[in] *buf pointer to a data buffer
+ * @param[in] len data buffer length
  * @return    status code
  *            - 0 success
  *            - 1 write failed
@@ -1368,9 +1368,9 @@ uint8_t ds1302_clock_burst_write(ds1302_handle_t *handle, uint8_t *buf, uint8_t 
 
 /**
  * @brief      clock burst read
- * @param[in]  *handle points to a ds1302 handle structure
- * @param[out] *buf points to a data buffer
- * @param[in]  len is the data buffer length
+ * @param[in]  *handle pointer to a ds1302 handle structure
+ * @param[out] *buf pointer to a data buffer
+ * @param[in]  len data buffer length
  * @return     status code
  *             - 0 success
  *             - 1 read failed
@@ -1406,9 +1406,9 @@ uint8_t ds1302_clock_burst_read(ds1302_handle_t *handle, uint8_t *buf, uint8_t l
 
 /**
  * @brief     ram burst write
- * @param[in] *handle points to a ds1302 handle structure
- * @param[in] *buf points to a data buffer
- * @param[in] len is the data buffer length
+ * @param[in] *handle pointer to a ds1302 handle structure
+ * @param[in] *buf pointer to a data buffer
+ * @param[in] len data buffer length
  * @return    status code
  *            - 0 success
  *            - 1 write failed
@@ -1444,9 +1444,9 @@ uint8_t ds1302_ram_burst_write(ds1302_handle_t *handle, uint8_t *buf, uint8_t le
 
 /**
  * @brief      ram burst read
- * @param[in]  *handle points to a ds1302 handle structure
- * @param[out] *buf points to a data buffer
- * @param[in]  len is the data buffer length
+ * @param[in]  *handle pointer to a ds1302 handle structure
+ * @param[out] *buf pointer to a data buffer
+ * @param[in]  len data buffer length
  * @return     status code
  *             - 0 success
  *             - 1 read failed
@@ -1482,10 +1482,10 @@ uint8_t ds1302_ram_burst_read(ds1302_handle_t *handle, uint8_t *buf, uint8_t len
 
 /**
  * @brief     set the chip register
- * @param[in] *handle points to a ds1302 handle structure
- * @param[in] reg is the register address
- * @param[in] *buf points to a data buffer
- * @param[in] len is the data buffer length
+ * @param[in] *handle pointer to a ds1302 handle structure
+ * @param[in] reg register address
+ * @param[in] *buf pointer to a data buffer
+ * @param[in] len data buffer length
  * @return    status code
  *            - 0 success
  *            - 1 write failed
@@ -1514,10 +1514,10 @@ uint8_t ds1302_set_reg(ds1302_handle_t *handle, uint8_t reg, uint8_t *buf, uint8
 
 /**
  * @brief      get the chip register
- * @param[in]  *handle points to a ds1302 handle structure
- * @param[in]  reg is the register address
- * @param[out] *buf points to a data buffer
- * @param[in]  len is the data buffer length
+ * @param[in]  *handle pointer to a ds1302 handle structure
+ * @param[in]  reg register address
+ * @param[out] *buf pointer to a data buffer
+ * @param[in]  len data buffer length
  * @return     status code
  *             - 0 success
  *             - 1 read failed
@@ -1546,7 +1546,7 @@ uint8_t ds1302_get_reg(ds1302_handle_t *handle, uint8_t reg, uint8_t *buf, uint8
 
 /**
  * @brief      get chip's information
- * @param[out] *info points to a ds1302 info structure
+ * @param[out] *info pointer to a ds1302 info structure
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
