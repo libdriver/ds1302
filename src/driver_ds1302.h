@@ -163,112 +163,112 @@ typedef struct ds1302_info_s
 
 /**
  * @brief     initialize ds1302_handle_t structure
- * @param[in] HANDLE points to a ds1302 handle structure
- * @param[in] STRUCTURE is ds1302_handle_t
+ * @param[in] HANDLE pointer to a ds1302 handle structure
+ * @param[in] STRUCTURE ds1302_handle_t
  * @note      none
  */
 #define DRIVER_DS1302_LINK_INIT(HANDLE, STRUCTURE)          memset(HANDLE, 0, sizeof(STRUCTURE))
 
 /**
  * @brief     link ce_gpio_init function
- * @param[in] HANDLE points to a ds1302 handle structure
- * @param[in] FUC points to a ce_gpio_init function address
+ * @param[in] HANDLE pointer to a ds1302 handle structure
+ * @param[in] FUC pointer to a ce_gpio_init function address
  * @note      none
  */
 #define DRIVER_DS1302_LINK_CE_GPIO_INIT(HANDLE, FUC)        (HANDLE)->ce_gpio_init = FUC
 
 /**
  * @brief     link ce_gpio_deinit function
- * @param[in] HANDLE points to a ds1302 handle structure
- * @param[in] FUC points to a ce_gpio_deinit function address
+ * @param[in] HANDLE pointer to a ds1302 handle structure
+ * @param[in] FUC pointer to a ce_gpio_deinit function address
  * @note      none
  */
 #define DRIVER_DS1302_LINK_CE_GPIO_DEINIT(HANDLE, FUC)      (HANDLE)->ce_gpio_deinit = FUC
 
 /**
  * @brief     link ce_gpio_write function
- * @param[in] HANDLE points to a ds1302 handle structure
- * @param[in] FUC points to a ce_gpio_write function address
+ * @param[in] HANDLE pointer to a ds1302 handle structure
+ * @param[in] FUC pointer to a ce_gpio_write function address
  * @note      none
  */
 #define DRIVER_DS1302_LINK_CE_GPIO_WRITE(HANDLE, FUC)       (HANDLE)->ce_gpio_write = FUC
 
 /**
  * @brief     link sclk_gpio_init function
- * @param[in] HANDLE points to a ds1302 handle structure
- * @param[in] FUC points to a sclk_gpio_init function address
+ * @param[in] HANDLE pointer to a ds1302 handle structure
+ * @param[in] FUC pointer to a sclk_gpio_init function address
  * @note      none
  */
 #define DRIVER_DS1302_LINK_SCLK_GPIO_INIT(HANDLE, FUC)      (HANDLE)->sclk_gpio_init = FUC
 
 /**
  * @brief     link sclk_gpio_deinit function
- * @param[in] HANDLE points to a ds1302 handle structure
- * @param[in] FUC points to a sclk_gpio_deinit function address
+ * @param[in] HANDLE pointer to a ds1302 handle structure
+ * @param[in] FUC pointer to a sclk_gpio_deinit function address
  * @note      none
  */
 #define DRIVER_DS1302_LINK_SCLK_GPIO_DEINIT(HANDLE, FUC)    (HANDLE)->sclk_gpio_deinit = FUC
 
 /**
  * @brief     link sclk_gpio_write function
- * @param[in] HANDLE points to a ds1302 handle structure
- * @param[in] FUC points to a sclk_gpio_write function address
+ * @param[in] HANDLE pointer to a ds1302 handle structure
+ * @param[in] FUC pointer to a sclk_gpio_write function address
  * @note      none
  */
 #define DRIVER_DS1302_LINK_SCLK_GPIO_WRITE(HANDLE, FUC)     (HANDLE)->sclk_gpio_write = FUC
 
 /**
  * @brief     link io_gpio_init function
- * @param[in] HANDLE points to a ds1302 handle structure
- * @param[in] FUC points to a io_gpio_init function address
+ * @param[in] HANDLE pointer to a ds1302 handle structure
+ * @param[in] FUC pointer to a io_gpio_init function address
  * @note      none
  */
 #define DRIVER_DS1302_LINK_IO_GPIO_INIT(HANDLE, FUC)        (HANDLE)->io_gpio_init = FUC
 
 /**
  * @brief     link io_gpio_deinit function
- * @param[in] HANDLE points to a ds1302 handle structure
- * @param[in] FUC points to a io_gpio_deinit function address
+ * @param[in] HANDLE pointer to a ds1302 handle structure
+ * @param[in] FUC pointer to a io_gpio_deinit function address
  * @note      none
  */
 #define DRIVER_DS1302_LINK_IO_GPIO_DEINIT(HANDLE, FUC)      (HANDLE)->io_gpio_deinit = FUC
 
 /**
  * @brief     link ce_gpio_write function
- * @param[in] HANDLE points to a ds1302 handle structure
- * @param[in] FUC points to a ce_gpio_write function address
+ * @param[in] HANDLE pointer to a ds1302 handle structure
+ * @param[in] FUC pointer to a ce_gpio_write function address
  * @note      none
  */
 #define DRIVER_DS1302_LINK_CS_GPIO_WRITE(HANDLE, FUC)       (HANDLE)->io_gpio_write = FUC
 
 /**
  * @brief     link ce_gpio_read function
- * @param[in] HANDLE points to a ds1302 handle structure
- * @param[in] FUC points to a ce_gpio_read function address
+ * @param[in] HANDLE pointer to a ds1302 handle structure
+ * @param[in] FUC pointer to a ce_gpio_read function address
  * @note      none
  */
 #define DRIVER_DS1302_LINK_CS_GPIO_READ(HANDLE, FUC)        (HANDLE)->io_gpio_read = FUC
 
 /**
  * @brief     link debug_print function
- * @param[in] HANDLE points to a ds1302 handle structure
- * @param[in] FUC points to a debug_print function address
+ * @param[in] HANDLE pointer to a ds1302 handle structure
+ * @param[in] FUC pointer to a debug_print function address
  * @note      none
  */
 #define DRIVER_DS1302_LINK_DEBUG_PRINT(HANDLE, FUC)         (HANDLE)->debug_print = FUC
 
 /**
  * @brief     link delay_ms function
- * @param[in] HANDLE points to a ds1302 handle structure
- * @param[in] FUC points to a delay_ms function address
+ * @param[in] HANDLE pointer to a ds1302 handle structure
+ * @param[in] FUC pointer to a delay_ms function address
  * @note      none
  */
 #define DRIVER_DS1302_LINK_DELAY_MS(HANDLE, FUC)            (HANDLE)->delay_ms = FUC
 
 /**
  * @brief     link delay_us function
- * @param[in] HANDLE points to a ds1302 handle structure
- * @param[in] FUC points to a delay_us function address
+ * @param[in] HANDLE pointer to a ds1302 handle structure
+ * @param[in] FUC pointer to a delay_us function address
  * @note      none
  */
 #define DRIVER_DS1302_LINK_DELAY_US(HANDLE, FUC)            (HANDLE)->delay_us = FUC
@@ -286,7 +286,7 @@ typedef struct ds1302_info_s
 
 /**
  * @brief      get chip's information
- * @param[out] *info points to a ds1302 info structure
+ * @param[out] *info pointer to a ds1302 info structure
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -296,7 +296,7 @@ uint8_t ds1302_info(ds1302_info_t *info);
 
 /**
  * @brief     initialize the chip
- * @param[in] *handle points to a ds1302 handle structure
+ * @param[in] *handle pointer to a ds1302 handle structure
  * @return    status code
  *            - 0 success
  *            - 1 gpio initialization failed
@@ -308,7 +308,7 @@ uint8_t ds1302_init(ds1302_handle_t *handle);
 
 /**
  * @brief     close the chip
- * @param[in] *handle points to a ds1302 handle structure
+ * @param[in] *handle pointer to a ds1302 handle structure
  * @return    status code
  *            - 0 success
  *            - 1 gpio deinit failed
@@ -320,8 +320,8 @@ uint8_t ds1302_deinit(ds1302_handle_t *handle);
 
 /**
  * @brief     set the current time
- * @param[in] *handle points to a ds1302 handle structure
- * @param[in] *t points to a time structure
+ * @param[in] *handle pointer to a ds1302 handle structure
+ * @param[in] *t pointer to a time structure
  * @return    status code
  *            - 0 success
  *            - 1 set time failed
@@ -334,8 +334,8 @@ uint8_t ds1302_set_time(ds1302_handle_t *handle, ds1302_time_t *t);
 
 /**
  * @brief      get the current time
- * @param[in]  *handle points to a ds1302 handle structure
- * @param[out] *t points to a time structure
+ * @param[in]  *handle pointer to a ds1302 handle structure
+ * @param[out] *t pointer to a time structure
  * @return     status code
  *             - 0 success
  *             - 1 get time failed
@@ -347,8 +347,8 @@ uint8_t ds1302_get_time(ds1302_handle_t *handle, ds1302_time_t *t);
 
 /**
  * @brief     enable or disable the oscillator
- * @param[in] *handle points to a ds1302 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a ds1302 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set oscillator failed
@@ -360,8 +360,8 @@ uint8_t ds1302_set_oscillator(ds1302_handle_t *handle, ds1302_bool_t enable);
 
 /**
  * @brief      get the chip oscillator status
- * @param[in]  *handle points to a ds1302 handle structure
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to a ds1302 handle structure
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get oscillator failed
@@ -373,8 +373,8 @@ uint8_t ds1302_get_oscillator(ds1302_handle_t *handle, ds1302_bool_t *enable);
 
 /**
  * @brief     enable or disable write protect
- * @param[in] *handle points to a ds1302 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a ds1302 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set write protect failed
@@ -386,8 +386,8 @@ uint8_t ds1302_set_write_protect(ds1302_handle_t *handle, ds1302_bool_t enable);
 
 /**
  * @brief      get write protect status
- * @param[in]  *handle points to a ds1302 handle structure
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to a ds1302 handle structure
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get write protect failed
@@ -399,8 +399,8 @@ uint8_t ds1302_get_write_protect(ds1302_handle_t *handle, ds1302_bool_t *enable)
 
 /**
  * @brief     set charge
- * @param[in] *handle points to a ds1302 handle structure
- * @param[in] charge is the set charge
+ * @param[in] *handle pointer to a ds1302 handle structure
+ * @param[in] charge charge mode
  * @return    status code
  *            - 0 success
  *            - 1 set charge failed
@@ -412,8 +412,8 @@ uint8_t ds1302_set_charge(ds1302_handle_t *handle, uint8_t charge);
 
 /**
  * @brief      get charge
- * @param[in]  *handle points to a ds1302 handle structure
- * @param[out] *charge points to a charge buffer
+ * @param[in]  *handle pointer to a ds1302 handle structure
+ * @param[out] *charge pointer to a charge buffer
  * @return     status code
  *             - 0 success
  *             - 1 get charge failed
@@ -425,10 +425,10 @@ uint8_t ds1302_get_charge(ds1302_handle_t *handle, uint8_t *charge);
 
 /**
  * @brief      read ram
- * @param[in]  *handle points to a ds1302 handle structure
- * @param[in]  addr is the ram address
- * @param[out] *buf points to a data buffer
- * @param[in]  len is the buffer length
+ * @param[in]  *handle pointer to a ds1302 handle structure
+ * @param[in]  addr ram address
+ * @param[out] *buf pointer to a data buffer
+ * @param[in]  len buffer length
  * @return     status code
  *             - 0 success
  *             - 1 read ram failed
@@ -442,10 +442,10 @@ uint8_t ds1302_read_ram(ds1302_handle_t *handle, uint8_t addr, uint8_t *buf, uin
 
 /**
  * @brief     write ram
- * @param[in] *handle points to a ds1302 handle structure
- * @param[in] addr is the ram address
- * @param[in] *buf points to a data buffer
- * @param[in] len is the buffer length
+ * @param[in] *handle pointer to a ds1302 handle structure
+ * @param[in] addr ram address
+ * @param[in] *buf pointer to a data buffer
+ * @param[in] len buffer length
  * @return    status code
  *            - 0 success
  *            - 1 write ram failed
@@ -470,9 +470,9 @@ uint8_t ds1302_write_ram(ds1302_handle_t *handle, uint8_t addr, uint8_t *buf, ui
 
 /**
  * @brief     clock burst write
- * @param[in] *handle points to a ds1302 handle structure
- * @param[in] *buf points to a data buffer
- * @param[in] len is the data buffer length
+ * @param[in] *handle pointer to a ds1302 handle structure
+ * @param[in] *buf pointer to a data buffer
+ * @param[in] len data buffer length
  * @return    status code
  *            - 0 success
  *            - 1 write failed
@@ -485,9 +485,9 @@ uint8_t ds1302_clock_burst_write(ds1302_handle_t *handle, uint8_t *buf, uint8_t 
 
 /**
  * @brief      clock burst read
- * @param[in]  *handle points to a ds1302 handle structure
- * @param[out] *buf points to a data buffer
- * @param[in]  len is the data buffer length
+ * @param[in]  *handle pointer to a ds1302 handle structure
+ * @param[out] *buf pointer to a data buffer
+ * @param[in]  len data buffer length
  * @return     status code
  *             - 0 success
  *             - 1 read failed
@@ -500,9 +500,9 @@ uint8_t ds1302_clock_burst_read(ds1302_handle_t *handle, uint8_t *buf, uint8_t l
 
 /**
  * @brief     ram burst write
- * @param[in] *handle points to a ds1302 handle structure
- * @param[in] *buf points to a data buffer
- * @param[in] len is the data buffer length
+ * @param[in] *handle pointer to a ds1302 handle structure
+ * @param[in] *buf pointer to a data buffer
+ * @param[in] len data buffer length
  * @return    status code
  *            - 0 success
  *            - 1 write failed
@@ -515,9 +515,9 @@ uint8_t ds1302_ram_burst_write(ds1302_handle_t *handle, uint8_t *buf, uint8_t le
 
 /**
  * @brief      ram burst read
- * @param[in]  *handle points to a ds1302 handle structure
- * @param[out] *buf points to a data buffer
- * @param[in]  len is the data buffer length
+ * @param[in]  *handle pointer to a ds1302 handle structure
+ * @param[out] *buf pointer to a data buffer
+ * @param[in]  len data buffer length
  * @return     status code
  *             - 0 success
  *             - 1 read failed
@@ -541,10 +541,10 @@ uint8_t ds1302_ram_burst_read(ds1302_handle_t *handle, uint8_t *buf, uint8_t len
 
 /**
  * @brief     set the chip register
- * @param[in] *handle points to a ds1302 handle structure
- * @param[in] reg is the register address
- * @param[in] *buf points to a data buffer
- * @param[in] len is the data buffer length
+ * @param[in] *handle pointer to a ds1302 handle structure
+ * @param[in] reg register address
+ * @param[in] *buf pointer to a data buffer
+ * @param[in] len data buffer length
  * @return    status code
  *            - 0 success
  *            - 1 write failed
@@ -556,10 +556,10 @@ uint8_t ds1302_set_reg(ds1302_handle_t *handle, uint8_t reg, uint8_t *buf, uint8
 
 /**
  * @brief      get the chip register
- * @param[in]  *handle points to a ds1302 handle structure
- * @param[in]  reg is the register address
- * @param[out] *buf points to a data buffer
- * @param[in]  len is the data buffer length
+ * @param[in]  *handle pointer to a ds1302 handle structure
+ * @param[in]  reg register address
+ * @param[out] *buf pointer to a data buffer
+ * @param[in]  len data buffer length
  * @return     status code
  *             - 0 success
  *             - 1 read failed

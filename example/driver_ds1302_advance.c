@@ -117,7 +117,7 @@ uint8_t ds1302_advance_deinit(void)
 
 /**
  * @brief     advance example set the time
- * @param[in] *t points to a time structure
+ * @param[in] *t pointer to a time structure
  * @return    status code
  *            - 0 success
  *            - 1 set time failed
@@ -136,7 +136,7 @@ uint8_t ds1302_advance_set_time(ds1302_time_t *t)
 
 /**
  * @brief     advance example set the time by a unix timestamp
- * @param[in] timestamp is a unix timestamp
+ * @param[in] timestamp unix timestamp
  * @return    status code
  *            - 0 success
  *            - 1 set timestamp failed
@@ -178,7 +178,7 @@ uint8_t ds1302_advance_set_timestamp(time_t timestamp)
 
 /**
  * @brief     advance example set the local time zone
- * @param[in] zone is the local time zone
+ * @param[in] zone local time zone
  * @return    status code
  *            - 0 success
  * @note      none
@@ -192,7 +192,7 @@ uint8_t ds1302_advance_set_timestamp_time_zone(int8_t zone)
 
 /**
  * @brief      advance example get the time
- * @param[out] *t points to a time structure
+ * @param[out] *t pointer to a time structure
  * @return     status code
  *             - 0 success
  *             - 1 get time failed
@@ -211,7 +211,7 @@ uint8_t ds1302_advance_get_time(ds1302_time_t *t)
 
 /**
  * @brief      advance example get the time in a unix timestamp
- * @param[out] *timestamp points to a unix timestamp buffer
+ * @param[out] *timestamp pointer to a unix timestamp buffer
  * @return     status code
  *             - 0 success
  *             - 1 get timestamp failed
@@ -250,7 +250,7 @@ uint8_t ds1302_advance_get_timestamp(time_t *timestamp)
 
 /**
  * @brief      advance example get the local time zone
- * @param[out] *zone points to a local time zone buffer
+ * @param[out] *zone pointer to a local time zone buffer
  * @return     status code
  *             - 0 success
  * @note       none
@@ -264,8 +264,8 @@ uint8_t ds1302_advance_get_timestamp_time_zone(int8_t *zone)
 
 /**
  * @brief      advance example get the ascii time
- * @param[out] *buf points to an ascii buffer
- * @param[in]  len is the data length
+ * @param[out] *buf pointer to an ascii buffer
+ * @param[in]  len data length
  * @return     status code
  *             - 0 success
  *             - 1 read failed
@@ -297,9 +297,9 @@ uint8_t ds1302_advance_get_ascii_time(char *buf, uint8_t len)
 
 /**
  * @brief      advance example read ram
- * @param[in]  addr is the ram address
- * @param[out] *buf points to a data buffer
- * @param[in]  len is the buffer length
+ * @param[in]  addr ram address
+ * @param[out] *buf pointer to a data buffer
+ * @param[in]  len buffer length
  * @return     status code
  *             - 0 success
  *             - 1 read ram failed
@@ -317,9 +317,9 @@ uint8_t ds1302_advance_read_ram(uint8_t addr, uint8_t *buf, uint8_t len)
 
 /**
  * @brief     advance example write ram
- * @param[in] addr is the ram address
- * @param[in] *buf points to a data buffer
- * @param[in] len is the buffer length
+ * @param[in] addr ram address
+ * @param[in] *buf pointer to a data buffer
+ * @param[in] len buffer length
  * @return    status code
  *            - 0 success
  *            - 1 write ram failed
@@ -337,7 +337,7 @@ uint8_t ds1302_advance_write_ram(uint8_t addr, uint8_t *buf, uint8_t len)
 
 /**
  * @brief     advance example set charge
- * @param[in] charge is the set charge
+ * @param[in] charge charge mode
  * @return    status code
  *            - 0 success
  *            - 1 set charge failed
@@ -357,7 +357,7 @@ uint8_t ds1302_advance_set_charge(uint8_t charge)
 
 /**
  * @brief      advance example get charge
- * @param[out] *charge points to a charge buffer
+ * @param[out] *charge pointer to a charge buffer
  * @return     status code
  *             - 0 success
  *             - 1 get charge failed
@@ -375,9 +375,9 @@ uint8_t ds1302_advance_get_charge(uint8_t *charge)
 
 /**
  * @brief     advance example burst write
- * @param[in] type is the burst type
- * @param[in] *buf points to a data buffer
- * @param[in] len is the data buffer length
+ * @param[in] type burst type
+ * @param[in] *buf pointer to a data buffer
+ * @param[in] len data buffer length
  * @return    status code
  *            - 0 success
  *            - 1 burst write failed
@@ -407,9 +407,9 @@ uint8_t ds1302_advance_burst_write(ds1302_burst_type_t type, uint8_t *buf, uint8
 
 /**
  * @brief      advance example burst read
- * @param[in]  type is the burst type
- * @param[out] *buf points to a data buffer
- * @param[in]  len is the data buffer length
+ * @param[in]  type burst type
+ * @param[out] *buf pointer to a data buffer
+ * @param[in]  len data buffer length
  * @return     status code
  *             - 0 success
  *             - 1 burst read failed
