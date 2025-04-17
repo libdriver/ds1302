@@ -10,7 +10,7 @@
 
 Der Erhaltungsladungs-Zeitnehmungschip DS1302 enthält eine Echtzeituhr/einen Echtzeitkalender und 31 Bytes statischen RAM. Die Kommunikation mit einem Mikroprozessor erfolgt über eine einfache serielle Schnittstelle. Die Echtzeituhr/der Echtzeitkalender bietet Informationen zu Sekunden, Minuten, Stunden, Tag, Datum, Monat und Jahr. Das Monatsendedatum wird für Monate mit weniger als 31 Tagen automatisch angepasst, einschließlich Korrekturen für Schaltjahre. Die Uhr arbeitet entweder im 24-Stunden- oder 12-Stunden-Format mit einer AM/PM-Anzeige. Die Verbindung des DS1302 mit einem Mikroprozessor wird durch die Verwendung synchroner serieller Kommunikation vereinfacht. Für die Kommunikation mit der Uhr/RAM sind nur drei Drähte erforderlich: CE, I/O (Datenleitung) und SCLK (serielle Uhr). Daten können jeweils 1 Byte oder in einem Burst von bis zu 31 Bytes zum und vom Takt/RAM übertragen werden. Der DS1302 ist für den Betrieb mit sehr geringem Stromverbrauch ausgelegt und speichert Daten und Taktinformationen mit weniger als 1 μW.
 
-LibDriver DS1302 ist ein voll funktionsfähiger Treiber von ds1302, der von LibDriver gestartet wurde. Er bietet Zeitlesen, RAM-Lesen oder -Schreiben und andere Funktionen. LibDriver ist MISRA-kompatibel.
+LibDriver DS1302 ist ein voll funktionsfähiger Treiber von DS1302, der von LibDriver gestartet wurde. Er bietet Zeitlesen, RAM-Lesen oder -Schreiben und andere Funktionen. LibDriver ist MISRA-kompatibel.
 
 ### Inhaltsverzeichnis
 
