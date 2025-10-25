@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['libdriver_20ds1302_152',['LibDriver DS1302',['../index.html',1,'']]]
+  ['hour_0',['hour',['../structds1302__time__s.html#ae5af4ff48939d13d480f87e56a9385d6',1,'ds1302_time_s']]]
 ];

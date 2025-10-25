@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['mainpage_2eh_153',['mainpage.h',['../mainpage_8h.html',1,'']]],
-  ['manufacturer_5fname_154',['manufacturer_name',['../structds1302__info__s.html#ad25285dbf810c90f8eaf3fcef6f2b2ea',1,'ds1302_info_s']]],
-  ['manufacturer_5fname_155',['MANUFACTURER_NAME',['../driver__ds1302_8c.html#aaa2b8f5b105c3019df0cb346f472e803',1,'driver_ds1302.c']]],
-  ['max_5fcurrent_156',['MAX_CURRENT',['../driver__ds1302_8c.html#a2989837a37d6d63b59c6dd541b785435',1,'driver_ds1302.c']]],
-  ['max_5fcurrent_5fma_157',['max_current_ma',['../structds1302__info__s.html#a9db82802561bf22d799b03a345f1d1dc',1,'ds1302_info_s']]],
-  ['minute_158',['minute',['../structds1302__time__s.html#a8ff981ec55c945940f4a0da7d8709b3c',1,'ds1302_time_s']]],
-  ['month_159',['month',['../structds1302__time__s.html#a3e00faf7fbf9805e9ec4d2edd6339050',1,'ds1302_time_s']]]
+  ['inited_0',['inited',['../structds1302__handle__s.html#a19bedf28d2b9748f6a62d9ae93f4e68f',1,'ds1302_handle_s']]],
+  ['interface_1',['interface',['../structds1302__info__s.html#aebaa6c28dd4f2c3dc27566fcb910fd28',1,'ds1302_info_s']]],
+  ['interface_20driver_20function_2',['ds1302 interface driver function',['../group__ds1302__interface__driver.html',1,'']]],
+  ['io_5fgpio_5fdeinit_3',['io_gpio_deinit',['../structds1302__handle__s.html#ae4997fffeb57b23b47bdf3be471567e3',1,'ds1302_handle_s']]],
+  ['io_5fgpio_5finit_4',['io_gpio_init',['../structds1302__handle__s.html#a33b034e8b7d230d358bd4d18314ac245',1,'ds1302_handle_s']]],
+  ['io_5fgpio_5fread_5',['io_gpio_read',['../structds1302__handle__s.html#af7cbbd7f5353e326fa6ff688e82d9306',1,'ds1302_handle_s']]],
+  ['io_5fgpio_5fwrite_6',['io_gpio_write',['../structds1302__handle__s.html#a5341926489574475948a81d31e4b1991',1,'ds1302_handle_s']]]
 ];
