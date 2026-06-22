@@ -1,3 +1,9 @@
+## 1.0.7 (2026-06-22)
+
+## Bug Fixes
+
+- fix ram address bugs
+
 ## 1.0.6 (2025-10-26)
 
 ## Features

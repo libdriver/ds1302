@@ -1107,8 +1107,8 @@ uint8_t ds1302_read_ram(ds1302_handle_t *handle, uint8_t addr, uint8_t *buf, uin
         return 5;                                                                  /* return error */
     }
     
-    res = a_ds1302_multiple_read(handle, (uint8_t)(DS1302_COMMAND_RAM + addr),
-                                 buf, len);                                        /* read ram */
+    res = a_ds1302_multiple_read(handle, (uint8_t)(DS1302_COMMAND_RAM +
+                                (addr << 1)), buf, len);                           /* read ram */
     if (res != 0)                                                                  /* check result */
     {
         handle->debug_print("ds1302: read ram failed.\n");                         /* read ram failed */
@@ -1159,8 +1159,8 @@ uint8_t ds1302_write_ram(ds1302_handle_t *handle, uint8_t addr, uint8_t *buf, ui
         return 5;                                                                  /* return error */
     }
     
-    res = a_ds1302_multiple_write(handle, (uint8_t)(DS1302_COMMAND_RAM + addr),
-                                  buf, len);                                       /* write ram */
+    res = a_ds1302_multiple_write(handle, (uint8_t)(DS1302_COMMAND_RAM +
+                                 (addr << 1)), buf, len);                          /* write ram */
     if (res != 0)                                                                  /* check result */
     {
         handle->debug_print("ds1302: write ram failed.\n");                        /* write ram failed */

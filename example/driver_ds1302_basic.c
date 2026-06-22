@@ -60,8 +60,8 @@ uint8_t ds1302_basic_init(void)
     DRIVER_DS1302_LINK_SCLK_GPIO_WRITE(&gs_handle, ds1302_interface_sclk_gpio_write);
     DRIVER_DS1302_LINK_IO_GPIO_INIT(&gs_handle, ds1302_interface_io_gpio_init);
     DRIVER_DS1302_LINK_IO_GPIO_DEINIT(&gs_handle, ds1302_interface_io_gpio_deinit);
-    DRIVER_DS1302_LINK_CS_GPIO_WRITE(&gs_handle, ds1302_interface_io_gpio_write);
-    DRIVER_DS1302_LINK_CS_GPIO_READ(&gs_handle, ds1302_interface_io_gpio_read);
+    DRIVER_DS1302_LINK_IO_GPIO_WRITE(&gs_handle, ds1302_interface_io_gpio_write);
+    DRIVER_DS1302_LINK_IO_GPIO_READ(&gs_handle, ds1302_interface_io_gpio_read);
     DRIVER_DS1302_LINK_DELAY_US(&gs_handle, ds1302_interface_delay_us);
     DRIVER_DS1302_LINK_DELAY_MS(&gs_handle, ds1302_interface_delay_ms);
     DRIVER_DS1302_LINK_DEBUG_PRINT(&gs_handle, ds1302_interface_debug_print);
