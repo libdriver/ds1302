@@ -234,20 +234,20 @@ typedef struct ds1302_info_s
 #define DRIVER_DS1302_LINK_IO_GPIO_DEINIT(HANDLE, FUC)      (HANDLE)->io_gpio_deinit = FUC
 
 /**
- * @brief     link ce_gpio_write function
+ * @brief     link io_gpio_write function
  * @param[in] HANDLE pointer to a ds1302 handle structure
- * @param[in] FUC pointer to a ce_gpio_write function address
+ * @param[in] FUC pointer to a io_gpio_write function address
  * @note      none
  */
-#define DRIVER_DS1302_LINK_CS_GPIO_WRITE(HANDLE, FUC)       (HANDLE)->io_gpio_write = FUC
+#define DRIVER_DS1302_LINK_IO_GPIO_WRITE(HANDLE, FUC)       (HANDLE)->io_gpio_write = FUC
 
 /**
- * @brief     link ce_gpio_read function
+ * @brief     link io_gpio_read function
  * @param[in] HANDLE pointer to a ds1302 handle structure
- * @param[in] FUC pointer to a ce_gpio_read function address
+ * @param[in] FUC pointer to a io_gpio_read function address
  * @note      none
  */
-#define DRIVER_DS1302_LINK_CS_GPIO_READ(HANDLE, FUC)        (HANDLE)->io_gpio_read = FUC
+#define DRIVER_DS1302_LINK_IO_GPIO_READ(HANDLE, FUC)        (HANDLE)->io_gpio_read = FUC
 
 /**
  * @brief     link debug_print function
