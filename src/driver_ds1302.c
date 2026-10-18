@@ -603,7 +603,7 @@ uint8_t ds1302_set_time(ds1302_handle_t *handle, ds1302_time_t *t)
     }
     if (t->format == DS1302_FORMAT_12H)                                                                      /* if 12H */
     {
-        if ((t->year < 2000) || (t->year > 2100))                                                            /* check year */
+        if ((t->year < 2000) || (t->year >= 2100))                                                           /* check year */
         {
             handle->debug_print("ds1302: year can't be over 2100 or less than 2000.\n");                     /* year can't be over 2100 or less than 2000 */
             
@@ -648,7 +648,7 @@ uint8_t ds1302_set_time(ds1302_handle_t *handle, ds1302_time_t *t)
     }
     else if (t->format == DS1302_FORMAT_24H)                                                                 /* if 24H */
     {
-        if ((t->year < 2000) || (t->year > 2100))                                                            /* check year */
+        if ((t->year < 2000) || (t->year >= 2100))                                                           /* check year */
         {
             handle->debug_print("ds1302: year can't be over 2100 or less than 2000.\n");                     /* year can't be over 2100 or less than 2000 */
             
@@ -749,10 +749,10 @@ uint8_t ds1302_set_time(ds1302_handle_t *handle, ds1302_time_t *t)
         
         return 1;                                                                                            /* return error */
     }
-    res = a_ds1302_write(handle, DS1302_COMMAND_RTC | DS1302_REG_MONTH, a_ds1302_hex2bcd(t->month));         /* write month and century */
+    res = a_ds1302_write(handle, DS1302_COMMAND_RTC | DS1302_REG_MONTH, a_ds1302_hex2bcd(t->month));         /* write month */
     if (res != 0)                                                                                            /* check result */
     {
-        handle->debug_print("ds1302: write century and month failed.\n");                                    /* write century and month failed */
+        handle->debug_print("ds1302: write month failed.\n");                                                /* write month failed */
         
         return 1;                                                                                            /* return error */
     }
@@ -1248,6 +1248,12 @@ uint8_t ds1302_init(ds1302_handle_t *handle)
     if (handle->io_gpio_read == NULL)                                /* check io_gpio_read */
     {
         handle->debug_print("ds1302: io_gpio_read is null.\n");      /* io_gpio_read is null */
+       
+        return 3;                                                    /* return error */
+    }
+    if (handle->delay_us == NULL)                                    /* check delay_us */
+    {
+        handle->debug_print("ds1302: delay_us is null.\n");          /* delay_us is null */
        
         return 3;                                                    /* return error */
     }
